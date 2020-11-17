@@ -1,0 +1,20 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+<h1>Item Categories</h1>
+{% if category_list %}
+    <ul>
+        {% for category in category_list %}
+            <li>
+                <a href="{% url 'bank:category_detail' category.id %}">{{category.name}}</a>
+                (<a href="{% url 'bank:category_update' category.id %}">Update</a>) |
+                (<a href="{% url 'bank:category_delete' category.id %}">Delete</a>)
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>There are no categories in the database</p>
+    <p>Add a <strong><a href="{% url 'bank:category_create' %}">Category</a></strong></p>
+{% endif %}
+<P><a href="{% url 'bank:category_create' %}">Add a new category</a> or <a href="{% url 'bank:item_create' %}">Add a new item to a category</a> <br><a href="{% url 'bank:all' %}">Back to home.</a></P>
+{% endblock %}

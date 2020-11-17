@@ -1,0 +1,17 @@
+{% extends "base_menu.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<script type="text/javascript">
+  alert("Upload failed. You did not upload a csv file")
+</script>
+<p>
+    <form action="" method="POST" enctype="multipart/form-data" action="{% url 'bank:item_create_file' %}">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit">
+    <input type="submit" value="Cancel" onclick="window.location.href='{% url 'bank:item_list' %}'; return false;">
+    </form>
+</p>
+
+{% endblock %}

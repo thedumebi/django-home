@@ -1,0 +1,12 @@
+{% extends "base_menu.html" %}
+
+{% block content %}
+<h1>Welcome to the bank app</h1>
+<p>What would you like to do today? (Each item must belong in a category. If category doesn't exist already, create one.)</p>
+<ul>
+    <li><a href="{% url 'bank:category_list' %}">View available categories.</a></li>
+    <li><a href="{% url 'bank:category_create' %}">Add a new category</a></li>
+    <li><a href="{% url 'bank:item_list' %}">View available items.</a></li>
+    <li><a href="{% url 'bank:item_create' %}">Add a non existing item to the store.</a></li>
+</ul>
+{% endblock %}

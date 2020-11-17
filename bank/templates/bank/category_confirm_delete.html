@@ -1,0 +1,10 @@
+{% extends "base_menu.html" %}
+{% block content %}
+<h1>Delete Category</h1>
+<p>Are you sure you want to delete the category: {{category.name}}?</p>
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" value="Yes, delete.">
+    <input type="button" value="Cancel" onclick="window.location.href='{% url 'bank:category_list' %}'; return false;"> 
+</form>
+{% endblock %}

@@ -1,0 +1,20 @@
+S/N,Items,Quantity,Unit Price,Total Price,Category
+1,pianos,100,120000,12000000,Stationaries
+2,chairs,60,2000,120000,Stationaries
+3,pens,3200,50,160000,Stationaries
+4,books,4000,50,200000,Stationaries
+5,cars,200,1000000,200000000,Cars
+6,bottles,800,150,120000,Stationaries
+7,trays,390,550,214500,Stationaries
+8,phones,2000,100000,200000000,Electronics
+9,computers,30,400000,12000000,Electronics
+10,tablets,90,80000,7200000,Electronics
+11,fans,50,15000,750000,Stationaries
+12,brooms,26,50,1300,Utilities
+13,windows,20,22000,440000,Stationaries
+14,dogs,10,20000,200000,persian
+15,sofas,5,250000,1250000,Stationaries
+16,Dumebi,1,20000,20000,Dmb
+17,DMB,2,50,10,Dmb
+18,Foyin,1,300,300,Utilities
+19,mouse,2,30,60,Stationaries
