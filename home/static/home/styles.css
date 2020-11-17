@@ -1,0 +1,96 @@
+body {
+  font-family: "Montserrat";s
+}
+
+/* Navbar */
+.navbar {
+    padding: 0 0 4rem;
+}
+
+.nav-item {
+    padding: 0 1rem;
+  }
+
+.dropdown-menu {
+  background-color: #4f5c4f;
+}
+
+.container-fluid {
+    padding: 5% 10%;
+  }
+
+/* Headings Section */
+.big-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Color Sections */
+.colored-section {
+  background-color: #4f5c4f;
+  color: #fff;
+  text-align: right;
+}
+
+.colored-section a {
+  color: #fff;
+}
+
+.colored-section a:hover {
+  color: burlywood;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #4f5c4f;
+}
+
+.white-section a {
+  background-color: #4f5c4f;
+  color: #fff;
+  padding: 0 1%;
+}
+
+.white-section a:hover {
+  color: burlywood;
+  }
+
+/* Title Section */
+#title.container-fluid {
+  padding: 0% 10% 10%;
+  text-align: center;
+}
+
+#title p {
+  line-height: 2;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+}
+
+#footer.white-section a{
+  background-color: #fff;
+  color: #4f5c4f;
+}
+
+.social-icon {
+  margin: 2% 2%;
+}
+
+@media (max-width:1028px) {
+  .big-heading {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}

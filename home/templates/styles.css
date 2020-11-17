@@ -1,0 +1,12 @@
+.navbar {
+    background-color: darkred;
+    padding: 0 0 4rem;
+}
+
+.nav-item {
+    padding: 0 1rem;
+  }
+
+.container-fluid {
+    padding: 7% 15%;
+  }
