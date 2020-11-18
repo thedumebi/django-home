@@ -67,6 +67,7 @@ class ItemListView(LoginRequiredMixin, ListView):
             item_list = Item.objects.all().order_by('-updated_at')
             item_dict = dict()
             for item in item_list:
+                print(item.category.name)
                 kv = {item.category.name: item.category.id}
                 item_dict.update(kv)
         for item in item_list:

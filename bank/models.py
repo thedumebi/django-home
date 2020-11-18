@@ -14,8 +14,8 @@ class Category(models.Model):
         return self.name
 
 class Remove(models.Model):
-    category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, related_name='remove_category')
-    item = models.ForeignKey('Item', on_delete=models.SET_NULL, null=True, related_name='remove_item')
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True, related_name='remove_category')
+    item = models.ForeignKey('Item', on_delete=models.CASCADE, null=True, related_name='remove_item')
     
 
 class Item(models.Model):
@@ -31,7 +31,7 @@ class Item(models.Model):
     picture = models.BinaryField(null=True, blank=True, editable=True)
     content_type = models.CharField(max_length=256, null=True, blank=True,
     help_text='The MIMEType of the file')
-    category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, related_name='item_category')
+    category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True, related_name='item_category')
 
     def __str__(self):
         return self.name
